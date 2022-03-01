@@ -3,6 +3,9 @@
 	padding: 30px 40px;
 	height: 80px;
 	box-sizing: border-box;
+	box-shadow:0 1px 1px #ccc;
+	color: #ffffff;
+
 	top:-100px;
 
 	-webkit-transition:top 0.3s;
@@ -127,4 +130,45 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 1500px;
+}
+
+
+#profile, #skills, #experience, #schools, #information, #special-skills
+{
+ margin-top:100px;
+ width:90%;
+ height:400px;
+ margin-left:5%;
+ padding:50px;
+ box-sizing:border-box;
+ background-color: white;
+ border-radius:10px;
+ color: #202028;
+ font-family: 'McLaren', cursive;
+}
+
+footer{
+	margin-top: 30px;
+	margin-bottom: 0px;
+	height: 80px;
+	box-sizing: border-box;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #202028;
+	color: white;
+}
+
+footer p{
+	margin: 0;
+	font-family: 'Be Vietnam Pro', sans-serif;
+	
+}
+footer p a{
+	text-decoration: none;
+	color: white;
+}
+
+footer p a:hover{
+	text-decoration: underline;
 }
