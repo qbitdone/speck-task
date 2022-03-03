@@ -48,7 +48,7 @@
 }
 
 .header-fixed .header-limiter nav {
-	font:22px Arial;
+	font:18px Arial;
 	font-family: 'McLaren', cursive;
 	line-height: 40px;
 	float: right;
@@ -135,16 +135,58 @@ body {
 
 #profile, #skills, #experience, #schools, #information, #special-skills
 {
- margin-top:100px;
- width:90%;
- height:400px;
- margin-left:5%;
- padding:50px;
+ width: 100%;
+ margin-left: auto;
+ margin-right: auto;
+ padding-left: 100px;
+ padding-right: 100px;
+ margin-top: 50px;
  box-sizing:border-box;
  background-color: white;
  border-radius:10px;
  color: #202028;
  font-family: 'McLaren', cursive;
+}
+
+#profile{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+
+#skills #skills-container{
+	display: flex;
+	justify-content: center;
+	gap: 100px; }
+
+#skills #skills-container li:hover{
+	color: #c03939;
+	cursor: pointer;
+}
+
+#skills h1:hover{
+	text-decoration: underline;
+	-webkit-text-decoration-color: #c03939; /* safari still uses vendor prefix */
+	text-decoration-color: #c03939;
+	text-underline-offset: 2px;
+}
+#profile p{
+	font-size: 180%;
+}
+#profile img{
+border-radius: 50%;
+-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	margin-left: 4%;
+}
+
+#profile img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.2);
 }
 
 footer{
@@ -171,4 +213,18 @@ footer p a{
 
 footer p a:hover{
 	text-decoration: underline;
+  -webkit-text-decoration-color: #c03939; /* safari still uses vendor prefix */
+  text-decoration-color: #c03939;
+  text-underline-offset: 2px;
 }
+
+#profile p span{
+	color: #c03939;
+}
+
+.color-with-marker {
+	list-style-position: inside;
+  }
+  .color-with-marker ::marker {
+	color: red;
+  }
