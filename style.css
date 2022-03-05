@@ -1,3 +1,11 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .header-fixed {
 	background-color: white;
 	padding: 30px 40px;
@@ -31,7 +39,8 @@
 .header-fixed .header-limiter h1 {
 	float: left;
 	font: normal 28px Cookie;
-	font-family: 'McLaren', cursive;
+	/*font-family: 'McLaren', cursive; */
+	font-family: 'Varela Round', sans-serif, cursive;
 	line-height: 40px;
 	margin: 0;
 }
@@ -50,6 +59,7 @@
 .header-fixed .header-limiter nav {
 	font:18px Arial;
 	font-family: 'McLaren', cursive;
+	font-family: 'Varela Round', sans-serif, cursive;
 	line-height: 40px;
 	float: right;
 }
@@ -129,7 +139,8 @@ body.fixed .header-fixed .header-limiter nav {
 body {
 	margin: 0;
 	padding: 0;
-	height: 1500px;
+	/*height: 1500px; */
+	overflow-x: hidden;
 }
 
 
@@ -146,6 +157,7 @@ body {
  border-radius:10px;
  color: #202028;
  font-family: 'McLaren', cursive;
+ font-family: 'Varela Round', sans-serif, cursive;
 }
 
 #profile{
@@ -156,11 +168,25 @@ body {
 	padding-right: 150px;
 }
 
+#special-skills .ss-container{
+	display: flex;
+	justify-content:calc(left + 50px);
+}
+
 #skills #skills-container{
 	display: flex;
 	justify-content: center;
-	gap: 100px; }
+	gap: 50px; 
+	margin-top: 50px;}
 
+#skills #skills-container h3{
+	margin-bottom: 15px;
+}
+
+#skills #skills-container #specials{
+	width: 300px;
+
+}
 #skills #skills-container li:hover{
 	color: #c03939;
 	cursor: pointer;
@@ -221,10 +247,6 @@ border-radius: 50%;
 	margin: 0;
 }
 
-.footer-distributed h3 span{
-	color:  #f45b69;
-}
-
 /* Footer links */
 
 .footer-distributed .footer-links{
@@ -244,6 +266,7 @@ border-radius: 50%;
 .footer-distributed .footer-company-name{
 	color:   #92999f;
 	font-size: 14px;
+	font-family: 'Varela Round', sans-serif, cursive;
 	font-weight: normal;
 	margin: 0;
 }
@@ -274,6 +297,7 @@ border-radius: 50%;
 
 .footer-distributed .footer-center p{
 	display: inline-block;
+	font-family: 'Varela Round', sans-serif, cursive;
 	color: #ffffff;
   font-weight:400;
 	vertical-align: middle;
@@ -315,6 +339,7 @@ border-radius: 50%;
 .footer-distributed .footer-company-about{
 	line-height: 20px;
 	color:  #92999f;
+	font-family: 'Varela Round', sans-serif, cursive;
 	font-size: 13px;
 	font-weight: normal;
 	margin: 0;
@@ -323,6 +348,7 @@ border-radius: 50%;
 .footer-distributed .footer-company-about span{
 	display: block;
 	color:  #ffffff;
+	font-family: 'Varela Round', sans-serif, cursive;
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 20px;
@@ -413,6 +439,9 @@ border-radius: 50%;
 	border-radius: 50%;
 	background: inherit;
 	z-index: 1;
+	margin: 0;
+  padding: 0;
+  box-sizing: border-box; 
   }
   
   .timeline ul li div {
@@ -605,6 +634,10 @@ border-radius: 50%;
 	border-radius: 50%;
 }
 
+.timeline-edu li data-type{
+	color: #c03939;
+}
+
 .timeline-edu li:before {
 	display: inline-block;
 	content: attr(data-year);
@@ -641,58 +674,22 @@ border-radius: 50%;
 	transform: translate(-50%, -100%);
 }
 
+/*
+	.ss-container{
+		list-style-type: none;
+		counter-reset: li;
+		margin-top: 25px;
+	}
+	.ss-container li {
+		font-size: 1em;
+	}
+	
+	.ss-container li:before {
+	  counter-increment: li;
+	  content: counter(li, decimal-leading-zero);
+		color: #f45b69;
+		margin-right: 0.25em;
+		font-family: 'Varela Round', sans-serif, cursive;
+	}
 
-.list-type2{
-	width:400px;
-	margin:0 auto;
-	}
-	
-	.list-type2 ol{
-	counter-reset: li;
-	list-style: none;
-	*list-style: decimal;
-	font-size: 15px;
-	font-family: 'Raleway', sans-serif;
-	padding: 0;
-	margin-bottom: 4em;
-	}
-	
-	.list-type2 ol ol{
-	margin: 0 0 0 2em;
-	}
-	
-	.list-type2 a{
-	position: relative;
-	display: block;
-	padding: .4em .4em .4em 2em;
-	*padding: .4em;
-	margin: .5em 0;
-	background: #f45b69;
-	color: #202028;
-	text-decoration: none;
-	transition: all .2s ease-in-out;
-	font-family: 'McLaren';
-	}
-	
-	.list-type2 a:hover{
-	background: #d6d4d4;
-	text-decoration:none;
-	transform: scale(1.1);
-	}
-	
-	.list-type2 a:before{
-	content: counter(li);
-	counter-increment: li;
-	position: absolute;
-	left: -1.3em;
-	top: 50%;
-	margin-top: -1.3em;
-	background:#f45b69;
-	height: 2em;
-	width: 2em;
-	line-height: 2em;
-	border: .3em solid #fff;
-	text-align: center;
-	font-weight: bold;
-	color:#FFF;
-	}
+	*/
