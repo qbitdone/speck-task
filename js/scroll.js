@@ -316,10 +316,6 @@ function scrollto(div)
       return Math.min.apply(null, dateDistances);
     }
   
-    /*
-      How to tell if a DOM element is visible in the current viewport?
-      http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
-    */
     function elementInViewport(el) {
       var top = el.offsetTop;
       var left = el.offsetLeft;
@@ -345,3 +341,6 @@ function scrollto(div)
       return window.getComputedStyle(document.querySelector('.cd-horizontal-timeline'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
     }
   });
+
+
+  

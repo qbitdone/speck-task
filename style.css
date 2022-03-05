@@ -408,7 +408,7 @@ border-radius: 50%;
 	list-style-position: inside;
   }
   .color-with-marker ::marker {
-	color: red;
+	color: #c03939;
   }
 
   /* TIMELINE
@@ -634,9 +634,6 @@ border-radius: 50%;
 	border-radius: 50%;
 }
 
-.timeline-edu li data-type{
-	color: #c03939;
-}
 
 .timeline-edu li:before {
 	display: inline-block;
@@ -673,23 +670,3 @@ border-radius: 50%;
 	margin-top: -10px;
 	transform: translate(-50%, -100%);
 }
-
-/*
-	.ss-container{
-		list-style-type: none;
-		counter-reset: li;
-		margin-top: 25px;
-	}
-	.ss-container li {
-		font-size: 1em;
-	}
-	
-	.ss-container li:before {
-	  counter-increment: li;
-	  content: counter(li, decimal-leading-zero);
-		color: #f45b69;
-		margin-right: 0.25em;
-		font-family: 'Varela Round', sans-serif, cursive;
-	}
-
-	*/
