@@ -408,7 +408,7 @@ border-radius: 50%;
 	list-style-position: inside;
   }
   .color-with-marker ::marker {
-	color: #c03939;
+	color: #f45b69;
   }
 
   /* TIMELINE
@@ -612,7 +612,7 @@ border-radius: 50%;
   }
   
   .timeline-edu {
-	width:800px;
+	width:55%;
 	height: 20px;
 	list-style: none;
 	text-align: justify;
