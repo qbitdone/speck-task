@@ -106,8 +106,28 @@ body.fixed .header-fixed .header-limiter nav {
 
 
 /* Making the header responsive */
+@media all and (max-width: 900px) {
+	.header-fixed .header-limiter nav a {
+		font-size: 16px;
+	}
+	.header-fixed .header-limiter h1 {
+		text-align: center;
+		font-size: 26px;
+	}
+}
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 780px) {
+	.header-fixed .header-limiter nav a {
+		font-size: 14px;
+	}
+	.header-fixed .header-limiter h1 {
+		text-align: center;
+		font-size: 24px;
+	}
+}
+
+
+@media all and (max-width: 710px) {
 
 	.header-fixed {
 		padding: 20px 0;
@@ -128,7 +148,7 @@ body.fixed .header-fixed .header-limiter nav {
 	}
 
 	.header-fixed .header-limiter nav a {
-		font-size: 13px;
+		font-size: 12px;
 	}
 
 	body.fixed .header-fixed {
@@ -139,12 +159,11 @@ body.fixed .header-fixed .header-limiter nav {
 body {
 	margin: 0;
 	padding: 0;
-	/*height: 1500px; */
 	overflow-x: hidden;
 }
 
 
-#profile, #skills, #experience, #schools, #special-skills
+#profile, #skills, #experience, #schools
 {
  width: 100%;
  margin-left: auto;
@@ -156,7 +175,6 @@ body {
  background-color: white;
  border-radius:10px;
  color: #202028;
- font-family: 'McLaren', cursive;
  font-family: 'Varela Round', sans-serif, cursive;
 }
 
@@ -176,6 +194,9 @@ body {
 #skills #skills-container{
 	display: flex;
 	justify-content: center;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 	gap: 50px; 
 	margin-top: 50px;}
 
@@ -208,6 +229,17 @@ border-radius: 50%;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 	margin-left: 4%;
+	width: 300px;
+}
+
+@media (max-width: 880px) {
+	#profile img{
+		width: 130px;
+	}
+
+	#profile p{
+		font-size: 17px;
+	}
 }
 
 #profile img:hover{
@@ -532,6 +564,12 @@ border-radius: 50%;
 	  left: -289px;
 	  /*250+45-6*/
 	}
+	#skills #skills-container{
+		flex-direction: column;
+	}
+	#skills #skills-container #specials{
+		width: 230px;
+	}
   }
   
   @media screen and (max-width: 600px) {
@@ -549,8 +587,26 @@ border-radius: 50%;
 	  border-width: 8px 16px 8px 0;
 	  border-color: transparent #f45b69 transparent transparent;
 	}
+	.timeline ul li div {
+		width: 200px;
+	  }
   }
   
+  @media screen and (max-width: 400px) {
+	.header-fixed .header-limiter nav a {
+		font-size: 10px;
+	}
+
+	#skills #skills-container{
+		font-size: 13.5px;
+	}
+	#skills #skills-container #specials{
+		width: 100px;
+	}
+	.timeline ul li div {
+		width: 150px;
+	  }
+  }
   
   /* EXTRA/CLIP PATH STYLES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -616,12 +672,15 @@ border-radius: 50%;
 	height: 20px;
 	list-style: none;
 	text-align: justify;
-	margin: 200px auto;
+	margin: 150px auto;
+	margin-left: auto;
+	margin-right: auto;
 	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, #202028), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
 	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, #202028 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
 }
 
 .timeline-edu:after {display: inline-block; content: ""; width: 100%;}
+
 
 .timeline-edu li {
 	display: inline-block;
@@ -670,3 +729,16 @@ border-radius: 50%;
 	margin-top: -10px;
 	transform: translate(-50%, -100%);
 }
+
+@media screen and (max-width: 600px) {
+	.timeline-edu li:before {
+		font-size: 12px;
+	}
+	
+	.timeline-edu li:after {
+		font-size: 10px;
+	}	
+	.timeline-edu {
+		width:100%;
+	}
+  }
