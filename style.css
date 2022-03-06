@@ -555,6 +555,15 @@ border-radius: 50%;
 	opacity: 1;
   }
 
+  @media screen and (max-width: 1100px) {
+	.timeline ul li:nth-child(odd) div {
+		transform: translate3d(50px, 0, 0);
+	  }
+	  
+	  .timeline ul li:nth-child(even) div {
+		transform: translate3d(-50px, 0, 0);
+	  }
+  }
   
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -573,6 +582,13 @@ border-radius: 50%;
 	#skills #skills-container #specials{
 		width: 230px;
 	}
+	.timeline ul li:nth-child(odd) div {
+		transform: translate3d(20px, 0, 0);
+	  }
+	  
+	  .timeline ul li:nth-child(even) div {
+		transform: translate3d(20px, 0, 0);
+	  }
   }
   
   @media screen and (max-width: 600px) {
