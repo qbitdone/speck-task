@@ -430,6 +430,9 @@ border-radius: 50%;
 
 }
 
+#schools{
+	margin-bottom: 250px;
+}
 
 
 #profile p span{
@@ -551,7 +554,7 @@ border-radius: 50%;
 	visibility: visible;
 	opacity: 1;
   }
-  
+
   
   /* GENERAL MEDIA QUERIES
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -574,10 +577,7 @@ border-radius: 50%;
   
   @media screen and (max-width: 600px) {
 	.timeline ul li {
-	  margin-left: 20px;
-	}
-	.timeline ul li div {
-	  width: calc(100vw - 91px);
+	  margin-left: -20px;
 	}
 	.timeline ul li:nth-child(even) div {
 	  left: 45px;
@@ -590,6 +590,16 @@ border-radius: 50%;
 	.timeline ul li div {
 		width: 200px;
 	  }
+	  .timeline ul li:nth-child(odd) div {
+		transform: translate3d(10px, 0, 0);
+	  }
+	  
+	  .timeline ul li:nth-child(even) div {
+		transform: translate3d(10px, 0, 0);
+	  }
+	  #schools{
+		margin-bottom: 200px;
+	}
   }
   
   @media screen and (max-width: 400px) {
@@ -601,11 +611,16 @@ border-radius: 50%;
 		font-size: 13.5px;
 	}
 	#skills #skills-container #specials{
-		width: 100px;
+		width: 120px;
 	}
 	.timeline ul li div {
 		width: 150px;
 	  }
+	#schools{
+		padding: 70px;
+		margin-top: -10px;
+		margin-bottom: -200px;
+	}
   }
   
   /* EXTRA/CLIP PATH STYLES
@@ -732,11 +747,11 @@ border-radius: 50%;
 
 @media screen and (max-width: 600px) {
 	.timeline-edu li:before {
-		font-size: 12px;
+		font-size: 16px;
 	}
 	
 	.timeline-edu li:after {
-		font-size: 10px;
+		font-size: 12px;
 	}	
 	.timeline-edu {
 		width:100%;
