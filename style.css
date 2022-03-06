@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* HEADER */
+
 .header-fixed {
 	background-color: white;
 	padding: 30px 40px;
@@ -13,9 +15,7 @@
 	box-sizing: border-box;
 	box-shadow:0 1px 1px #ccc;
 	color: #ffffff;
-
 	top:-100px;
-
 	-webkit-transition:top 0.3s;
 	transition:top 0.3s;
 }
@@ -25,9 +25,6 @@
 	text-align: center;
 	margin: 0 auto;
 }
-
-/*	The header placeholder. It is displayed when the header is fixed to the top of the
-	browser window, in order to prevent the content of the page from jumping up. */
 
 .header-fixed-placeholder{
 	height: 80px;
@@ -77,7 +74,6 @@
 	color: #c03939;
 }
 
-
 /* Fixed version of the header */
 
 body.fixed .header-fixed {
@@ -104,8 +100,8 @@ body.fixed .header-fixed .header-limiter nav {
 	font-size: 13px;
 }
 
-
 /* Making the header responsive */
+
 @media all and (max-width: 900px) {
 	.header-fixed .header-limiter nav a {
 		font-size: 16px;
@@ -125,7 +121,6 @@ body.fixed .header-fixed .header-limiter nav {
 		font-size: 24px;
 	}
 }
-
 
 @media all and (max-width: 710px) {
 
@@ -156,26 +151,28 @@ body.fixed .header-fixed .header-limiter nav {
 	}
 
 }
+
 body {
 	margin: 0;
 	padding: 0;
 	overflow-x: hidden;
 }
 
+/* PROFILE */
 
 #profile, #skills, #experience, #schools
 {
- width: 100%;
- margin-left: auto;
- margin-right: auto;
- padding-left: 100px;
- padding-right: 100px;
- margin-top: 50px;
- box-sizing:border-box;
- background-color: white;
- border-radius:10px;
- color: #202028;
- font-family: 'Varela Round', sans-serif, cursive;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 100px;
+	padding-right: 100px;
+	margin-top: 50px;
+	box-sizing:border-box;
+	background-color: white;
+	border-radius:10px;
+	color: #202028;
+	font-family: 'Varela Round', sans-serif, cursive;
 }
 
 #profile{
@@ -185,6 +182,40 @@ body {
 	padding-left: 150px;
 	padding-right: 150px;
 }
+
+#profile p span{
+	color: #c03939;
+}
+
+#profile p{
+	font-size: 180%;
+}
+#profile img{
+border-radius: 50%;
+-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+	margin-left: 4%;
+	width: 300px;
+}
+
+#profile img:hover{
+	-webkit-transform: scale(1.3);
+	transform: scale(1.2);
+}
+
+@media (max-width: 880px) {
+	#profile img{
+		width: 130px;
+	}
+
+	#profile p{
+		font-size: 17px;
+	}
+}
+
+/* SKILLS */
 
 #special-skills .ss-container{
 	display: flex;
@@ -219,33 +250,15 @@ body {
 	text-decoration-color: #c03939;
 	text-underline-offset: 2px;
 }
-#profile p{
-	font-size: 180%;
+
+.color-with-marker {
+	list-style-position: inside;
 }
-#profile img{
-border-radius: 50%;
--webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-	margin-left: 4%;
-	width: 300px;
+  .color-with-marker ::marker {
+	color: #f45b69;
 }
 
-@media (max-width: 880px) {
-	#profile img{
-		width: 130px;
-	}
-
-	#profile p{
-		font-size: 17px;
-	}
-}
-
-#profile img:hover{
-	-webkit-transform: scale(1.3);
-	transform: scale(1.2);
-}
+/* FOOTER */
 
 .footer-distributed{
 	background: #666;
@@ -407,7 +420,7 @@ border-radius: 50%;
 	margin-bottom: 5px;
 }
 
-/* If you don't want the footer to be responsive, remove these media queries */
+/* Making the footer responsive */
 
 @media (max-width: 880px) {
 
@@ -430,21 +443,11 @@ border-radius: 50%;
 
 }
 
+/* WORK EXPERIENCE */
+
 #schools{
 	margin-bottom: 250px;
 }
-
-
-#profile p span{
-	color: #c03939;
-}
-
-.color-with-marker {
-	list-style-position: inside;
-  }
-  .color-with-marker ::marker {
-	color: #f45b69;
-  }
 
   /* TIMELINE
   –––––––––––––––––––––––––––––––––––––––––––––––––– */
@@ -698,6 +701,8 @@ border-radius: 50%;
 	}
   }
   
+/* EDUCATION */
+
   .timeline-edu {
 	width:55%;
 	height: 20px;
