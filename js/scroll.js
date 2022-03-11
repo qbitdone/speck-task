@@ -1,12 +1,3 @@
-
-/*
-jQuery('.sc-profile').click(function(e){
-    var jump = $(this).attr('href');
-    var new_position = $(jump).offset();
-    $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
-    e.preventDefault();
-}); */
-
 $(document).ready(function(){
 
     var showHeaderAt = 150;
@@ -345,40 +336,9 @@ $(document).ready(function(){
   });
 
 
-jQuery('.sc-profile').click(function(e){
+jQuery('.scroll').click(function(e){
     var jump = $(this).attr('href');
     var new_position = $(jump).offset();
     $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
     e.preventDefault();
 }); 
-
-jQuery('.sc-skills').click(function(e){
-  var jump = $(this).attr('href');
-  var new_position = $(jump).offset();
-  $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
-  e.preventDefault();
-});
-
-jQuery('.sc-experience').click(function(e){
-  var jump = $(this).attr('href');
-  var new_position = $(jump).offset();
-  $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
-  e.preventDefault();
-});
-
-jQuery('.sc-schools').click(function(e){
-  var jump = $(this).attr('href');
-  var new_position = $(jump).offset();
-  $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
-  e.preventDefault();
-});
-
-jQuery('.sc-information').click(function(e){
-  var jump = $(this).attr('href');
-  var new_position = $(jump).offset();
-  $('html, body').stop().animate({ scrollTop: new_position.top }, 700);
-  e.preventDefault();
-});
-
-
-  
